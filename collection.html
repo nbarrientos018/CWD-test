@@ -1,0 +1,132 @@
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- css override -->
+    <link rel="stylesheet" href="colstyle.css">
+    
+    <title>Document</title>
+</head>
+<body class="grey">
+
+
+    <div class="container">
+        <h3>Collection</h3>
+        <ul class="collection">
+            
+            <li class="collection-item">Niño</li>
+            <li class="collection-item">Niño</li>
+            <li class="collection-item">Niño</li>
+            <li class="collection-item">Niño</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3>Collections but anchor</h3>
+        <div class="collection"  >
+            <a href="" class="collection-item">Barrientos</a>
+            <a href="" class="collection-item">Barrientos</a>
+            <a href="" class="collection-item">Barrientos</a>
+            <a href="" class="collection-item">Barrientos</a>
+        </div>
+    </div>
+    
+
+<!-- fixed action button -->
+        <div class="fixed-action-btn toolbar">
+            <a class="btn btn-floating btn-large orange">
+                <i class="material-icons">mode_edit</i>
+            </a>
+            <ul>
+                <li><a href="" class="btn-floating "><i class="material-icons">adb</i></a></li>
+                <li><a href="" class="btn-floating "><i class="material-icons">alarm</i></a></li>
+                <li><a href="" class="btn-floating "><i class="material-icons">animation</i></a></li>
+                <li><a href="" class="btn-floating "><i class="material-icons">ballot</i></a></li>
+
+            </ul>
+            
+        </div>
+        
+
+<br>
+        <!-- try grids huhu absent ako -->
+
+        <div class="container">
+            <div class="row center">
+                <div class="col s3 center-align">
+                    <i class="material-icons">adb</i>
+                    <h5>I think there's like 12 invisible rows per horizontal grid</h5>
+                </div>
+
+                <div class="col s1"></div>
+
+                <div class="col s3 center-align">
+                    <i class="material-icons">adb</i>
+                    <h5>that's why we need to input s3 on the colum atr</h5>
+                </div>
+
+                <div class="col s1"></div>
+
+                <div class="col s3 center-align">
+                    <i class="material-icons">adb</i>
+                    <h5>and may also be the reason why i need to use two s1 col divs</h5>
+                </div>
+
+                <br>
+                <div class="row">
+                <div class="col s12 m8">
+                    <img src="keqing.jpg" alt="" class="responsive-img">
+                </div>
+                <div class="col s12 m4 center-align">
+                    <h4>KEQING</h4>
+                    <p class="center">my name is my name keqing asdasdasadsad asdasd as das asd asd adsd as ad</p>
+                </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col s12 m12 l12 xl12 card-panel light-green">
+                        <h4>eeeeeeeeeeeee</h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12 m6 l3 card-panel white-text grey">
+                            <h3>try 2</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+<!-- jquery cdn for floating action button  -->
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+<!-- javascripts -->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+
+    <!-- floating coked jq -->
+    <script> document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.fixed-action-btn');
+        var instances = M.FloatingActionButton.init(elems, {
+          toolbarEnabled: true
+        });
+      });
+      </script>
+
+</body>
+</html>
